@@ -1,0 +1,208 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);    background-repeat: no-repeat;
+background-attachment: fixed;}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    color: rgb(149, 146, 146);
+}
+
+#plus{
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    top: 12px;
+    right:0px;  
+}
+.addToDo{
+padding: 15px 40px 15px 40px;
+border-radius: 5px;
+border:none;
+outline: none;
+width: 90%;
+}
+
+.addToDo::placeholder{
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+#submit{
+    padding: 15px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    background-image:radial-gradient(circle at 10% 20%, rgb(102, 116, 236) 0%, rgb(50, 231, 219) 90%);
+}
+
+.font{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#newtask{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container{
+    width: 100%;
+    min-width: 400px;
+    margin: auto;
+    padding: 30px 40px;
+}
+
+#tasks{
+    background-color:white;
+    padding: 23px 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+.task{
+    background-color:white;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+#taskname{
+    outline: none;
+}
+.delete{
+    background-color:rgb(157, 20, 20);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.task {
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+
+.delete:hover {
+    background-color: #cc0000;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    accent-color:#0093AF;
+  }
+
+ .edit{
+   padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    background-color: #ace0f9;
+  }
+
+@media screen and (max-width:1024px) {
+    .container{
+        margin-top: -20px;
+    }
+    #submit{
+        padding: 13px 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    h1{
+        font-size: 30px;
+    }
+    
+    #plus{
+        font-size: 30px;
+        position: relative;
+        top: 6px;
+    }
+
+    .addToDo{
+        padding: 15px 30px 15px 30px;
+        border-radius: 5px;
+        border:none;
+        outline: none;
+        width: 80%;
+        }
+
+        .container{
+            margin-top: -30px;
+        }
+
+        #submit{
+            padding: 13px 15px;
+        }
+}
+
+@media screen and (max-width:426px) and (min-width:320px) {
+    h1{
+        text-align: start;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    
+    #plus{
+        font-size: 25px;
+        position: relative;
+        top: 5px;
+        right:5px;  
+    }
+    .addToDo{
+    width: 75%;
+    margin-left: -75px; 
+   }
+    
+    #submit{
+        padding: 13px 15px;
+        }
+    
+    #tasks{
+        padding: 23px 20px;
+        margin-top: 30px;
+        width: 100%;
+        margin-left: -33px; 
+
+    }
+    
+}
+
+
